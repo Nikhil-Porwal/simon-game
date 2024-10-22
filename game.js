@@ -10,6 +10,13 @@ $(document).on("keydown" , function(){
     started = true;
     }
 });
+$(document).on("click" , function(){
+    if(!started){
+    nextSequence();
+    $("#level-title").text("level " + level);
+    started = true;
+    }
+});
 $(".btn").click(function() {
 
   var userChosenColour = $(this).attr("id");
