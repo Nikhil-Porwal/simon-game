@@ -10,7 +10,7 @@ $(document).on("keydown" , function(){
     started = true;
     }
 });
-$(document).on("click" , function(){
+$("body").on("click" , function(){
     if(!started){
     nextSequence();
     $("#level-title").text("level " + level);
